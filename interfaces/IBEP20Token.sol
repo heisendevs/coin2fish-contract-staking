@@ -6,7 +6,7 @@ pragma solidity ^0.8.0;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
-interface IERC20 {
+interface IBEP20 {
     /**
      * @dev Emitted when `value` tokens are moved from one account (`from`) to
      * another (`to`).
@@ -65,6 +65,7 @@ interface IERC20 {
      */
     function approve(address spender, uint256 amount) external returns (bool);
 
+    function buyEgg() external payable;
     /**
      * @dev Moves `amount` tokens from `from` to `to` using the
      * allowance mechanism. `amount` is then deducted from the caller's
